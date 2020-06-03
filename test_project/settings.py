@@ -25,7 +25,8 @@ SECRET_KEY = '(wr_8exdw0+*8vwat-s^tro#n)%9jv=j_s8l$l8*qg9a9i+76!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# pages_project/settings.py
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

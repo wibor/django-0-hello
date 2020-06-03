@@ -30,3 +30,9 @@
     
  6. write some SimpleTestCase, stop server
     python manage.py test
+    
+ 7. heroku deploy
+    • update Pipfile.lock 
+    • make a new Procfile file 
+    • install gunicorn as our web server 
+    • make aone-line change to settings.py file
