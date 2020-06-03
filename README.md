@@ -12,7 +12,7 @@
     new project with PyCharm, new interpreter pipenv, install Django
     
  2. pipenv shell
-    django-admin startproject test_project .
+    django-admin startproject name_of_project .
     tree
     python manage.py runserver
     -> ConnectionResetError: [WinError 10054]
@@ -22,3 +22,11 @@
     -> if Linux: touch pages/urls.py
     -> Windows: cd pages copy NUL urls.py
  
+ 4. cd pages mkdir templates/pages cd ... copy NUL home.html
+    setting.py: TEMPLATES: 'DIRS': [os.path.join(BASE_DIR, 'templates')], # new
+ 
+ 5. view based on class, 'base.html' as layout
+    {% extends 'base.html' %}
+    
+ 6. write some SimpleTestCase, stop server
+    python manage.py test
