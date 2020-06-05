@@ -21,6 +21,8 @@
     add to INSTALLED_APPS 'pages.apps.PagesConfig', # new
     -> if Linux: touch pages/urls.py
     -> Windows: cd pages copy NUL urls.py
+    
+    python manage.py migrate
  
  4. cd pages mkdir templates/pages cd ... copy NUL home.html
     setting.py: TEMPLATES: 'DIRS': [os.path.join(BASE_DIR, 'templates')], # new
@@ -36,3 +38,9 @@
     • make a new Procfile file 
     • install gunicorn as our web server 
     • make aone-line change to settings.py file
+    
+    • create a new app on Heroku and push our code to it 
+    • add a git remote “hook” for Heroku 
+    • configure the app to ignore static files 
+    • start the Heroku server so the app is live 
+    • visit the app on Heroku’s provided URL
