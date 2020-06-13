@@ -35,9 +35,18 @@
     
  7. heroku deploy
     • update Pipfile.lock 
+    -> pipenv lock
+    
     • make a new Procfile file 
+    -> touch Procfile
+    
     • install gunicorn as our web server 
+    procfile-> web: gunicorn blog_project.wsgi --log-file -
+    -> pipenv install gunicorn==19.9.0
+    
     • make aone-line change to settings.py file
+    # blog_project/settings.py 
+    ALLOWED_HOSTS = ['*']
     
     • create a new app on Heroku and push our code to it 
     • add a git remote “hook” for Heroku 
